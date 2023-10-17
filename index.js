@@ -31,3 +31,26 @@
 
 
 // express framework
+
+import express from 'express'
+
+// const server =express()
+
+// server.listen(5000,()=>{
+//     console.log("server is working")
+// })
+
+const app=express();
+
+app.get('/',(req,res,next)=>{
+    // res.sendStatus(404)
+
+    res.json({
+        success:true,
+        product:[]
+    })
+})
+
+app.listen(5000,()=>{
+    console.log(" srever is working")
+})
