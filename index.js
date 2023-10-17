@@ -45,10 +45,11 @@ const app=express();
 app.get('/',(req,res,next)=>{
     // res.sendStatus(404)
 
-    res.json({
-        success:true,
-        product:[]
-    })
+    // res.json({
+    //     success:true,
+    //     product:[]
+    // })
+    res.render("index.ejs",{name:"Aman"})
 })
 
 app.listen(5000,()=>{
